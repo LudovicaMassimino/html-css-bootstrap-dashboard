@@ -6,3 +6,8 @@ ul,ol,menu {
     display: flex;
     justify-content: space-between;
 }
+
+.list-group-item{
+    display: flex;
+    
+}
