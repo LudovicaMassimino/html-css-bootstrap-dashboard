@@ -11,3 +11,8 @@ ul,ol,menu {
     display: flex;
     
 }
+
+input::placeholder { 
+    color: black; 
+}
+

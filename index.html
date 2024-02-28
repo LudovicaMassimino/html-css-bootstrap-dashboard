@@ -25,21 +25,25 @@
                     <img src="img/duck.png" alt="papera bianca su sfondo fucsia" width="40" height="40" class="d-inline-block align-text-center">
                     Catalogo Libri
                 </a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Anagrafica Utenti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Storico Prestiti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Help</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 text-bg-light" type="search" placeholder="Cerca..." aria-label="search">
-                    <button class="btn btn-outline-light" type="submit"> Cerca</button>
-                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"       id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" data-bs-toggle="collapse" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 text-dark bg-light" type="search" placeholder="Cerca..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"> Cerca</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -48,7 +52,7 @@
     <main>
 
         <!-- grid -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
 
             <!-- prima colonna, sinistra -->
@@ -335,7 +339,7 @@
             <!-- prima card -->
 
             <div class="col-md-3 lg-2">
-                <div class="card border-silver mb-3" style="width: 20rem;">
+                <div class="card border-silver mb-3">
                     <div class="card-header"><h3>Todo</h3></div>
                     <div class="card-body">
                         <div class="card border-silver mb-3" style="width: auto;">
@@ -362,7 +366,7 @@
 
                 <!-- seconda card -->
 
-                <div class="card border-silver mb-3" style="width: 20rem;">
+                <div class="card border-silver mb-3">
                     <div class="card-header"><h3>F.A.Q.</h3></div>
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
