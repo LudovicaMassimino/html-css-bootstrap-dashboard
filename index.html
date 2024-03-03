@@ -19,8 +19,8 @@
 
     <!-- header, navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark bg-body" data-bs-theme="dark">
+            <div class="container-header">
                 <a class="navbar-brand" href="#">
                     <img src="img/duck.png" alt="papera bianca su sfondo fucsia" width="40" height="40" class="d-inline-block align-text-center">
                     Catalogo Libri
@@ -31,13 +31,15 @@
                 <div class="collapse navbar-collapse"       id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" data-bs-toggle="collapse" href="#">Anagrafica Utenti</a>
+                            <a class="nav-link" aria-current="page" data-bs-toggle="collapse" href="#"><i class="bi bi-person"></i><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"  class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                              </svg></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Storico Prestiti</a>
+                            <a class="nav-link" aria-current="page" data-bs-toggle="collapse" href="#">Storico Prestiti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Help</a>
+                            <a class="nav-link" aria-current="page" data-bs-toggle="collapse" href="#">Help</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -52,13 +54,13 @@
     <main>
 
         <!-- grid -->
-        <div class="container">
+        <div class="container pt-5">
             <div class="row">
 
                 <!-- prima colonna, sinistra -->
 
-                <div class="col-md-9 lg-10 pt-5">
-                <section class="title">
+                <div class="col-sm-8 col-lg-10">
+                <section class="fs-1 d-flex justify-content-between">
                     <div>
                         <h2>Catalogo Libri</h2>
                     </div>
@@ -69,25 +71,25 @@
 
                 <!-- tabella -->
 
-                <div class="table-responsive pt-5">
+                <div class="table pt-5">
                     <table class="table table-striped">
                         <thead>
                         <tr>
                             <th>Titolo</th>
-                            <th>Data prestito</th>
-                            <th>Stato</th>
-                            <th>Azioni</th>
+                            <th class="text-center">Data prestito</th>
+                            <th class="text-center">Stato</th>
+                            <th class="text-center">Azioni</th>
                         </tr>
                         
                         </thead>
                         <tbody>
                             <tr>
                                 <td>I pilastri della Terra</td>
-                                <td>-</td>
-                                <td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-success">Disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -104,11 +106,11 @@
                             </tr>
                             <tr>
                                 <td>I promessi sposi</td>
-                                <td>-</td>
-                                <td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-success">Disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -125,11 +127,11 @@
                             </tr>
                             <tr>
                                 <td>Il signore degli anelli</td>
-                                <td>18/10/2023</td>
-                                <td>
+                                <td class="text-center">18/10/2023</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-warning">In prestito</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -146,11 +148,11 @@
                             </tr>
                             <tr>
                                 <td>Harry Potter e la pietra filosofale</td>
-                                <td>-</td>
-                                <td>
-                                    <span class="badge text-bg-success">Disponibile</span>
+                                <td class="text-center">-</td>
+                                <td class="text-center">
+                                    <span class="badge text-bg-success text">Disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -167,11 +169,11 @@
                             </tr>
                             <tr>
                                 <td>Il codice Da Vinci</td>
-                                <td>-</td>
-                                <td> 
+                                <td class="text-center">-</td>
+                                <td class="text-center"> 
                                     <span class="badge text-bg-danger">Non disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -188,11 +190,11 @@
                             </tr>
                             <tr>
                                 <td>Shining</td>
-                                <td>-</td>
-                                <td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-success">Disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -209,11 +211,11 @@
                             </tr>
                             <tr>
                                 <td>La divina commedia</td>
-                                <td>21/09/2023</td>
-                                <td>
+                                <td class="text-center">21/09/2023</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-warning">In prestito</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -230,11 +232,11 @@
                             </tr>
                             <tr>
                                 <td>Il trono di spade</td>
-                                <td>-</td>
-                                <td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-success">Disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -251,11 +253,11 @@
                             </tr>
                             <tr>
                                 <td>Il mondo di Sofia</td>
-                                <td>-</td>
-                                <td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-danger">Non disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -272,11 +274,11 @@
                             </tr>
                             <tr>
                                 <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
-                                <td>25/07/2023</td>
-                                <td>
+                                <td class="text-center">25/07/2023</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-warning">In prestito</span>                                 
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -293,11 +295,11 @@
                             </tr>
                             <tr>
                                 <td>Il piccolo principe</td>
-                                <td>-</td>
-                                <td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-success">Disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -314,11 +316,11 @@
                             </tr>
                             <tr>
                                 <td>La storia infinita</td>
-                                <td>-</td>
-                                <td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">
                                     <span class="badge text-bg-success">Disponibile</span>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <a href="" class="btn btn-outline-dark">
                                         <i class="bi bi-pencil.fill"></i>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -340,7 +342,7 @@
                 <!-- seconda colonna, destra -->
 
                 
-                <div class="col-md-3 lg-2 pt-5">
+                <div class="col-4 lg-2 pt-5">
 
                     <!-- prima card -->
 
